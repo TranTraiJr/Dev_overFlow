@@ -2,7 +2,7 @@
   "extends": [
     "next/core-web-vitals",
     "standard",
-    "plugin:tailwaindcss/recommended",
+    "plugin:tailwindcss/recommended",
     "prettier"
   ]
 }
