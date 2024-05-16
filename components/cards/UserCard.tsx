@@ -1,4 +1,4 @@
-import { getTopInteractedTags } from "@/lib/actions/tag.action";
+// import { getTopInteractedTags } from "@/lib/actions/tag.action";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -13,7 +13,7 @@ interface Props {
 }
 
 const UserCard = async ({ user }: Props) => {
-  const interactedTags = await getTopInteractedTags({ userId: user._id });
+  // const interactedTags = await getTopInteractedTags({ userId: user._id });
 
   return (
     <Link
