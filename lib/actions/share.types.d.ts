@@ -35,6 +35,7 @@ export interface AnswerVoteParams {
   userId: string;
   hasupVoted: boolean;
   hasdownVoted: boolean;
+  path: string;
 }
 
 export interface DeleteAnswerParams {
