@@ -10,16 +10,9 @@ interface QuestionProps {
   clerkId?: string | null;
   _id: string;
   title: string;
-  tags: {
-    _id: string;
-    name: string;
-  }[];
-  author: {
-    _id: string;
-    name: string;
-    picture: string;
-  };
-  upvotes: string[];
+  tags: any;
+  author: any;
+  upvotes: any;
   views: number;
   answers: Array<object>;
   createdAt: Date;
@@ -59,7 +52,7 @@ const QuestionCard = ({
         </SignedIn>
       </div>
       <div className="mt-3.5 flex flex-wrap gap-2">
-        {tags.map((tag) => (
+        {tags.map((tag: any) => (
           <RenderTag
             key={tag._id.toString()}
             _id={tag._id.toString()}
