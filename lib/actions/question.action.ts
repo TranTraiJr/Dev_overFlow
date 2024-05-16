@@ -318,6 +318,7 @@ export async function getRecommendedQuestions(params: RecommendedParams) {
     }, []);
 
     const distinctUserTagIds = [
+      // @ts-ignore:next-line
       ...new Set(userTags.map((tag: any) => tag._id)),
     ];
 
