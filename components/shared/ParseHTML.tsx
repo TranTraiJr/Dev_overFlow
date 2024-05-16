@@ -1,5 +1,6 @@
 "use client";
 
+// @ts-ignore:next-line
 import Prism from "prismjs";
 import parse from "html-react-parser";
 import React, { useEffect } from "react";
